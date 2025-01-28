@@ -49,8 +49,8 @@ section {
     margin-bottom: 10px; /* Space between image and text */
 }
 
-.intro-text p {
-    font-size: 14px;
+.intro-text {
+    width: 100%; /* Ensures text doesn't shrink */
 }
 
 /* Styling for User Comments */
