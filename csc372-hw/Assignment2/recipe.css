@@ -1,25 +1,29 @@
 body {
-    font-family: Georgia, Garamond, serif;
-    background-color: #ffffff;
-    color: #404040;
+    font-family: Georgia, serif;
+    background-color: #fff8e1;
+    color: #333;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-    background-color: #F0F0F0;
     padding: 20px;
 }
 
-h1 {
-    color: #A4A400;
-    font-size: 22pt;
+header h1 {
+    text-align: center;
+    color: #d4a017;
     text-decoration: underline;
 }
 
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+ul, ol {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
 a {
-    color: #A4A400;
+    color: #d4a017;
     text-decoration: none;
 }
 
