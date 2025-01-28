@@ -1,31 +1,82 @@
 body {
-    font-family: Georgia;
-    background-color: #fff8e1;
-    color: #333;
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #404040;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F0F0F0;
     padding: 20px;
-}
-
-header h1 {
     text-align: center;
-    color: #d4a017;
 }
 
+h1 {
+    color: #A4A400;
+    font-size: 22pt;
+    text-decoration: underline;
+}
+
+/* Styling for sections */
 h2 {
-    color: #555;
-    margin-top: 20px;
+    color: #A4A400;
+    text-decoration: underline;
 }
 
-ul, ol {
-    margin: 10px 0 20px;
+section {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Styling for Ingredients and Directions */
+.ingredients ul, .directions ol {
+    margin: 10px 0;
     padding-left: 20px;
 }
 
-a {
-    color: #d4a017;
+/* Styling for the Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.intro-text p {
+    font-size: 14px;
+}
+
+/* Styling for User Comments */
+.comments blockquote {
+    background-color: #ffffcc;
+    padding: 10px;
+    border-left: 5px solid #A4A400;
+    margin: 10px 0;
+}
+
+/* Styling for Links */
+.links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links a {
+    color: #A4A400;
     text-decoration: none;
 }
 
-a:hover {
+.links a:hover {
     text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #F0F0F0;
 }
