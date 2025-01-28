@@ -1,16 +1,28 @@
 body {
-    background-color: white;
-    color: #404040;
     font-family: Georgia, Garamond, serif;
-    font-size: 11pt;
+    background-color: #ffffff;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #F0F0F0;
+    padding: 20px;
 }
 
 h1 {
     color: #A4A400;
-    background-color: #F0F0F0;
-    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     font-size: 22pt;
-    text-align: center;
-    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    color: #A4A400;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
