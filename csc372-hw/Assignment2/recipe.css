@@ -39,6 +39,8 @@ section {
 .intro {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Ensure text is left-aligned */
     padding: 20px;
 }
 
@@ -48,7 +50,9 @@ section {
 }
 
 .intro-text {
-    width: 100%; /* Ensures text doesn't shrink */
+    width: 100%;
+    text-align: left; /* Ensure text remains left-aligned */
+    margin-left: 0; /* Remove extra margin */
 }
 
 /* Styling for User Comments */
