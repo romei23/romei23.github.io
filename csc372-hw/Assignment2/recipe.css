@@ -38,13 +38,15 @@ section {
 /* Styling for the Intro Section */
 .intro {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the content */
+    text-align: center; /* Ensure text is centered */
     padding: 20px;
 }
 
 .intro img {
-    width: 200px;
-    margin-right: 20px;
+    width: 250px; /* Adjust image size */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 .intro-text p {
