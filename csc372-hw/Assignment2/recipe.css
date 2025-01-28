@@ -39,8 +39,6 @@ section {
 .intro {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align the content */
-    text-align: center; /* Ensure text is centered */
     padding: 20px;
 }
 
