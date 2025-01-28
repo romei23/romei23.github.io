@@ -6,16 +6,31 @@
     <title>Assignment 2: Granny's Pies</title>
     <link rel="stylesheet" href="recipe.css">
     <style>
-        /* Additional inline CSS for centering and resizing the image */
+        /* Additional inline CSS for centering, resizing, and positioning the image */
         .center-image {
             display: flex;
             justify-content: center; /* Horizontally center the image */
-            align-items: center; /* Vertically center if height is set */
-            margin-top: 20px;
+            margin-top: 50px; /* Move the image down */
         }
         .center-image img {
-            max-width: 80%; /* Make the image responsive */
+            max-width: 100%; /* Allow the image to take the full width of the container */
+            width: 600px; /* Set a large fixed width */
             height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Styling for links */
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .links a {
+            color: #A4A400; /* Match link color */
+            font-weight: bold;
+            text-decoration: underline; /* Underline links */
+            font-size: 18px;
+        }
+        .links a:hover {
+            text-decoration: none; /* Remove underline on hover */
         }
     </style>
 </head>
@@ -24,18 +39,19 @@
         <h1>Granny's Pies</h1>
     </header>
     <main>
-        <!-- Centered and Enlarged Image -->
+        <!-- Centered, Enlarged, and Moved Down Image -->
         <div class="center-image">
             <img src="pie-1.jpg" alt="Lemon Meringue Pie">
         </div>
-        <p style="text-align: center;">
-            <a href="/csc372-hw/Assignment2/pie.html">View the Lemon Meringue Pie Recipe</a>
-        </p>
+        <div class="links">
+            <p><a href="/csc372-hw/Assignment2/pie.html">View the Lemon Meringue Pie Recipe</a></p>
+        </div>
     </main>
     <footer>
-        <p style="text-align: center;">
-            <a href="/index.html">Back to Homework</a>
-        </p>
+        <div class="links">
+            <p><a href="/index.html">Back to Homework</a></p>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2012 Granny's Pies | All rights reserved</p>
     </footer>
 </body>
 </html>
