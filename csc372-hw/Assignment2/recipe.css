@@ -71,6 +71,7 @@ section {
 /* Styling for Links */
 .links ul {
     list-style-type: none;
+    text-decoration: underline;
     padding-left: 0;
 }
 
