@@ -15,14 +15,17 @@ header {
 }
 
 /* Styling for Main and Section Titles */
-h1, h2 {
-    color: #A4A400; /* Yellow-green color */
+h1 {
     font-size: 22pt;
     font-weight: bold;
     text-decoration: underline;
     background-color: #F0F0F0; /* Light gray background */
     padding: 10px;
     margin: 0;
+}
+
+h2 {
+    margin-left: 20px;
 }
 
 /* Section Spacing */
