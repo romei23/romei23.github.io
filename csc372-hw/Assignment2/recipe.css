@@ -35,7 +35,6 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    
     margin-top: 20px;
 }
 
@@ -55,7 +54,7 @@ section {
 /* Styling for the Intro Section */
 .intro {
     display: flex;
-    align-items: flex-start; /* Align image and text to the left */
+    flex-direction: column; /* Stack image and text vertically */
     padding: 20px;
 }
 
