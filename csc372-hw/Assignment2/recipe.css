@@ -10,8 +10,10 @@ body {
 /* Header Styling */
 header {
     background-color: #F0F0F0;
+    color: #A4A400;
     padding: 20px;
     text-align: center;
+    text-decoration: underline;
 }
 
 /* Styling for Main and Section Titles */
@@ -27,12 +29,13 @@ h1 {
 
 /* Section Headers */
 h2 {
-    color: #A4A400; /* Match reference image */
+    color: #A4A400; 
+    background-color: #F0F0F0;
     font-size: 18pt;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    margin-left: 20px;
+    
     margin-top: 20px;
 }
 
@@ -80,6 +83,7 @@ section {
 .links ul {
     list-style-type: none;
     padding-left: 0;
+    margin-left: 20px;
 }
 
 .links a {
