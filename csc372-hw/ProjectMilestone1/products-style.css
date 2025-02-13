@@ -42,6 +42,41 @@ header {
     z-index: 1000;
 }
 
+.search-bar {
+    position: absolute;
+    left: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1f3d2b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #295c3a;
+}
+
 .logo {
     height: 50px;
     margin-right: 20px;
