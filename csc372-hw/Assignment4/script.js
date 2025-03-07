@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         losses = 0;
         ties = 0;
         updateScoreDisplay();
-        resultText.textContent = 'Make your move!';
+        resultText.textContent = '';
         computerChoiceImage.src = '/csc372-hw/Assignment4/images/question-mark.PNG';
         computerChoiceImage.classList.remove('selected');
         choices.forEach(c => c.classList.remove('selected'));
