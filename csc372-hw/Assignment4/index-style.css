@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.player-section, .computer-section, .result-section, .score-section {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.choices img, #computer-choice {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+    border: 4px solid transparent; /* Ensure border is always present but transparent by default */
+    border-radius: 10px;
+}
+
+.choices img:hover {
+    transform: scale(1.1);
+    border-color: #007BFF;
+}
+
+.choices .selected, #computer-choice.selected {
+    border-color: #007BFF; /* Change border color when selected */
+}
+
+.result-section {
+    margin-top: 20px;
+}
+
+#reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background-color: #cc0000;
+}
