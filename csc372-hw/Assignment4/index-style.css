@@ -10,6 +10,7 @@ h1 {
     color: #333;
 }
 
+/* Style for each section */
 .player-section, .computer-section, .result-section, .score-section {
     border: 2px solid black;
     border-radius: 10px;
@@ -23,6 +24,7 @@ h1 {
     margin-top: 20px;
 }
 
+/* Style for images */
 .choices img, #computer-choice {
     width: 100px;
     height: 100px;
@@ -33,11 +35,13 @@ h1 {
     border-radius: 10px;
 }
 
+/* Hover effect for images */
 .choices img:hover {
     transform: scale(1.1);
     border-color: #007BFF;
 }
 
+/* Style for selected images */
 .choices .selected, #computer-choice.selected {
     border-color: #007BFF; /* Change border color when selected */
 }
@@ -46,6 +50,7 @@ h1 {
     margin-top: 20px;
 }
 
+/* Style for reset button */
 #reset {
     margin-top: 10px;
     padding: 10px 20px;

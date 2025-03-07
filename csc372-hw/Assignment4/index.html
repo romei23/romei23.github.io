@@ -9,6 +9,7 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <div class="game-container">
+        <!-- Player's choice section -->
         <div class="player-section">
             <h2>Your Choice</h2>
             <div class="choices">
@@ -17,21 +18,24 @@
                 <img src="/csc372-hw/Assignment4/images/scissors.PNG" alt="Scissors" id="scissors" class="choice">
             </div>
         </div>
+        <!-- Computer's choice section -->
         <div class="computer-section">
             <h2>Computer's Choice</h2>
             <img src="/csc372-hw/Assignment4/images/question-mark.PNG" alt="Computer Choice" id="computer-choice">
         </div>
+        <!-- Result section -->
         <div class="result-section">
             <h2>Result</h2>
             <p id="result-text"></p>
         </div>
     </div>
+    <!-- Score section -->
     <div class="score-section">
         <h2>Score</h2>
         <p>Wins: <span id="wins">0</span></p>
         <p>Losses: <span id="losses">0</span></p>
         <p>Ties: <span id="ties">0</span></p>
-
+        
         <button id="reset">Reset Score</button>
     </div>
     <script src="script.js"></script>

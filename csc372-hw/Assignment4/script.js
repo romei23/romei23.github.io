@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const choicesArray = ['rock', 'paper', 'scissors'];
 
+    // Event listener for player's choice
     choices.forEach(choice => {
         choice.addEventListener('click', () => {
             choices.forEach(c => c.classList.remove('selected'));
@@ -28,17 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Event listener for reset button
     resetButton.addEventListener('click', () => {
         wins = 0;
         losses = 0;
         ties = 0;
         updateScoreDisplay();
-        resultText.textContent = '';
+        resultText.textContent = ''; // Clear the text
         computerChoiceImage.src = '/csc372-hw/Assignment4/images/question-mark.PNG';
         computerChoiceImage.classList.remove('selected');
         choices.forEach(c => c.classList.remove('selected'));
     });
 
+    // Function to shuffle computer's choice
     function shuffleComputerChoice(callback) {
         let shuffleCount = 0;
         const shuffleInterval = setInterval(() => {
@@ -52,11 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     }
 
+    // Function to update computer's choice image
     function updateComputerChoiceImage(choice) {
         computerChoiceImage.src = `/csc372-hw/Assignment4/images/${choice}.PNG`;
         computerChoiceImage.classList.add('selected');
     }
 
+    // Function to determine the winner
     function determineWinner(player, computer) {
         if (player === computer) {
             return 'tie';
@@ -71,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Function to update the score
     function updateScore(result) {
         if (result === 'win') {
             wins++;
@@ -82,12 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
         updateScoreDisplay();
     }
 
+    // Function to update the score display
     function updateScoreDisplay() {
         winsElement.textContent = wins;
         lossesElement.textContent = losses;
         tiesElement.textContent = ties;
     }
 
+    // Function to update the result text
     function updateResultText(result, playerChoice, computerChoice) {
         if (result === 'win') {
             resultText.textContent = `You win!`;
