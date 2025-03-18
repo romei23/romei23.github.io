@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Gallery</title>
+    <link rel="stylesheet" href="index-style.css">
+    <script defer src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repository Gallery</h1>
+        <input type="text" id="username" placeholder="Enter GitHub Username">
+        <button onclick="fetchRepos()">Search</button>
+        <div id="repo-list" class="repo-gallery"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('username').value = 'romei23'; // Set default username
+            fetchRepos(); // Load default user's repositories
+        });
+    </script>
+</body>
+</html>
