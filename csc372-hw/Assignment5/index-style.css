@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: whitesmoke;
     padding: 20px;
 }
 .container {
@@ -36,7 +36,7 @@ button:hover {
     gap: 15px;
 }
 .repo {
-    background: #fdfdfd;
+    background: whitesmoke;
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
@@ -46,9 +46,12 @@ button:hover {
     border: 1px solid #ccc;
 }
 .repo a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #007BFF;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .repo h3 {
     display: flex;

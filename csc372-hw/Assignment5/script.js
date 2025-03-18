@@ -1,3 +1,4 @@
+/* script.js */
 let GITHUB_TOKEN = localStorage.getItem("github_token");
 if (!GITHUB_TOKEN) {
     GITHUB_TOKEN = prompt("Enter your GitHub Token:");
@@ -36,7 +37,7 @@ async function fetchRepos() {
             const repoDiv = document.createElement('div');
             repoDiv.classList.add('repo');
             repoDiv.innerHTML = `
-                <h3><i class='fab fa-github'></i> <a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                <h3><a href="${repo.html_url}" target="_blank"><i class='fab fa-github'></i> ${repo.name}</a></h3>
                 <p>${repo.description || 'No description available'}</p>
                 <p><strong>Created:</strong> ${new Date(repo.created_at).toLocaleDateString()}</p>
                 <p><strong>Updated:</strong> ${new Date(repo.updated_at).toLocaleDateString()}</p>
